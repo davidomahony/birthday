@@ -11,6 +11,7 @@ namespace Birthday
         [TestMethod]
         public void DemoTest()
         {
+            // This is just for demoing or running the function not actually testing anything
             var results = this.service.IdentifyBirthdaysToday("Put the exaple text in here");
             Assert.IsNotNull(results);
             // what is the expected result
