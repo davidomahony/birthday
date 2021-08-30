@@ -13,7 +13,7 @@ namespace Birthday
         /// <summary>
         /// Input is a json string and output is a list of people
         /// </summary>
-        public IEnumerable<string> IdentifySameBirthdays(string inputtedJsonString)
+        public IEnumerable<string> IdentifyBirthdaysToday(string inputtedJsonString)
         {
             if (string.IsNullOrEmpty(inputtedJsonString))
             {
