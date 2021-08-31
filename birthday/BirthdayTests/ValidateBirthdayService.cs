@@ -64,5 +64,13 @@ namespace Birthday
             Assert.IsNotNull(results);
             Assert.AreEqual("John Joe Doe", results.First());
         }
+
+        [TestMethod]
+        public void TestFutureBirthday()
+        {
+            var results = this.service.IdentifyBirthdaysToday(TestInputs.ProvidedInputWithBirthdayInTheFuture);
+            Assert.IsNotNull(results);
+            Assert.IsFalse(results.Any());
+        }
     }
 }

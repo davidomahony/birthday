@@ -32,7 +32,8 @@ namespace Birthday
                 this.builder.SetPersonInputs(p);
                 if (this.builder.TryBuild(out Person createdPerson)
                     && createdPerson.Birthday.Month.Equals(DateTime.Today.Month)
-                    && createdPerson.Birthday.Day.Equals(DateTime.Today.Day))
+                    && createdPerson.Birthday.Day.Equals(DateTime.Today.Day)
+                    && createdPerson.Birthday.Year.CompareTo(DateTime.Today.Year) < 0)
                 {
                     peopleWithBirthdayToday.Add(createdPerson);
                 }

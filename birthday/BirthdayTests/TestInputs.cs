@@ -32,5 +32,12 @@ namespace Birthday
 	            [""Gaga"", ""Lady"", ""1986/28/02""]
             ]
             ";
+
+        public static string ProvidedInputWithBirthdayInTheFuture = @" 
+            [
+	            [""Doe"", ""Joe"", ""John"", """ + DateTime.Today.Date.AddYears(5) + @"""],
+	            [""Gaga"", ""Lady"", ""1986/28/02""]
+            ]
+            ";
     }
 }
